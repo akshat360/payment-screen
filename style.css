@@ -1,0 +1,86 @@
+/** @format */
+
+* {
+	box-sizing: border-box;
+}
+
+#card {
+	max-width: 500px;
+	height: 80vh;
+	margin: auto;
+	overflow-y: scroll;
+}
+#pay-container {
+	background: #f4fafa;
+}
+.inner-container {
+	padding: 15px 20px;
+}
+.pay-btn {
+	width: 100%;
+	background: #004b8d;
+	border: none;
+	border-radius: 10px;
+	margin: 0.5rem 0;
+	padding: 0 1rem;
+	height: 52px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	color: white;
+}
+.pay-btn > img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.pay-btn > div {
+	width: 100%;
+	padding-left: 15px;
+}
+.pay-btn:hover {
+	transform: scale(1.02);
+	transition: 0.1s ease-in;
+}
+.text-blue {
+	color: #004b8d;
+}
+.text-gray {
+	color: #aaa;
+}
+#phone-input {
+	width: 80%;
+	border: none;
+	background: #f4fafa;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+#send-btn {
+	background: #f4fafa;
+	padding: 5px 20px;
+	border-radius: 8px;
+	width: 18%;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+	#phone-input {
+		width: 100%;
+	}
+	#send-btn {
+		margin-top: 5px;
+		width: 100%;
+	}
+}
+@media screen and (min-width: 500px) {
+	#card {
+		margin-top: 10vh;
+		border: 2.5px solid #3ca9f9;
+	}
+}
+@media screen and (min-width: 1025px) {
+	#card {
+		margin-top: 10vh;
+	}
+}
